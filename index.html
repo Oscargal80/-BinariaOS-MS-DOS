@@ -9,7 +9,7 @@
     <meta name="keywords" content="Desarrollo, Web, Diseño, Asucnión, Paraguay">
     
     <!-- Titulo-->
-    <title>BinariaOS || Desarrollo Web Asunción Paraguay Plantillas, CMS, landings</title>
+    <title>BinariaOS || Desarrollo Web Asunci&oacute;n Paraguay Plantillas, CMS, landings</title>
     
     <!-- No click -->
     <script type="text/javascript">document.oncontextmenu = function show() { alert("NO ES POSIBLE ACCEDER AL MENU CONTEXTUAL POR ESTE MEDIO."); return false }</script>
@@ -27,6 +27,12 @@
     
 </head>
 <body>
+    <!-- Audio -->
+    <audio id="player" hidden>
+        <source src="/audio/sugar-plum.mp3" type="audio/mp3">
+    </audio>
+    
+    <!-- Body -->
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <div class="container">
             <a href="index.html" class="navbar-brand">BinariaOS Web Dev</a>
@@ -105,7 +111,6 @@
                                         <a class="btn btn-primary btn-lg" href="about.html" role="button">Acerca de Nosotros</a>
                                         <a class="btn btn-primary btn-lg" href="contact.html" role="button">Contactos</a>
                                         <img src="img/pump1.png" width="230" alt="Card image">
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -220,14 +225,27 @@
                         <p>Llamadas:<a href="https://wa.me/595981480801" > +595981480801</a>
                         <p>email:<a href="mailto:info@binariaos.com.py" > info@binariaos.com.py</a></p>
                         <p>Desarollado por <strong> BinariaOS </strong> | <mark>Copyright 2022</mark>.</p>
+                        <p class="custom-control custom-switch">
+                         <input type="checkbox" class="custom-control-input" id="customSwitch1" checked1 onclick="javascript:toggleSound();">
+                          <label class="custom-control-label" for="customSwitch1">Music on/off</label>
+                          </p>
+                        <script type="text/javascript">
+                        function toggleSound() {
+                        var audioElem = document.getElementById('player');
+                        if (audioElem.paused)
+                            audioElem.play();
+                        else
+                            audioElem.pause();
+                            }
+                        </script>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="bs-component">
                         <ul class="list-group">
-                            <p><img src="/img/qr.png" width="55" alt="Card image"><a href="https://wa.me/595981480801" target="_blank"> WhatsApp >>>>>>>>>>>>>>></a>
+                            <p><img src="/img/qr.png" width="55" alt="Card image"><a href="https://wa.me/595981480801" target="_blank"> WhatsApp >>></a>
                             </p>
-                            <p><img src="/img/mx.png" width="55" alt="Card image"><a href="https://clientes.maxdominios.com/aff.php?aff=1043" target="_blank"> Hosted by Maxdominios >>>>>>>>>>>>>>></a>
+                            <p><img src="/img/mx.png" width="55" alt="Card image"><a href="https://clientes.maxdominios.com/aff.php?aff=1043" target="_blank"> Hosted by Maxdominios >>></a>
                         </ul>
                     </div>
                 </div>
