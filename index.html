@@ -18,12 +18,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
     
     <!-- Links -->
-    <link rel="stylesheet" href="dos.css">
     <link href="img/Logoico.png" rel="icon">
     <link href="img/Logoico.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
-    <link href="css/bootstrap-reboot.css" rel="stylesheet">
-    <link href="css/bootstrap-grid.css" rel="stylesheet">
     
 </head>
 <body>
@@ -84,8 +81,8 @@
     <div class="container" style="background:url('dist/fonts/grid.svg')">
         <div class="bs-docs-section clearfix">
             <div class="row">
-                <div class="col-lg-2">
-                    <h2>Bienvenido!</h2>
+                <div class="col-lg-1">
+                    <h2>Ready</h2>
                 </div>
             </div>
             
@@ -157,7 +154,7 @@
             <div class="bs-component">
               <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#home">Todo lo que necesita saber</a>
+                  <a class="nav-link active" data-toggle="tab" href="#home">Lo que necesita saber</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-toggle="tab" href="#profile">Acerca</a>
@@ -199,7 +196,7 @@
                     </div>
                     <form class="form-inline my-lg-6" role="search" id="form-inline my-lg-6">
                         <input class="form-control mr-sm-2" type="search" placeholder="buscar en todos lados" id="query" name="q">
-                        <button class="btn btn-success">Buscar...</button>
+                        <button class="btn btn-outline-success">Buscar...</button>
                     </form>
                     <script>const f = document.getElementById('form-inline my-lg-6');
                         const q = document.getElementById('query');
@@ -227,7 +224,7 @@
                         <p>Desarollado por <strong> BinariaOS </strong> | <mark>Copyright 2022</mark>.</p>
                         <p class="custom-control custom-switch">
                          <input type="checkbox" class="custom-control-input" id="customSwitch1" checked1 onclick="javascript:toggleSound();">
-                          <label class="custom-control-label" for="customSwitch1">Music on/off</label>
+                          <label class="custom-control-label" for="customSwitch1">&#127925; on/off</label>
                           </p>
                         <script type="text/javascript">
                         function toggleSound() {
@@ -243,9 +240,9 @@
                 <div class="col-lg-6">
                     <div class="bs-component">
                         <ul class="list-group">
-                            <p><img src="/img/qr.png" width="55" alt="Card image"><a href="https://wa.me/595981480801" target="_blank"> WhatsApp >>></a>
+                            <p><img src="/img/qr.webp" width="55" alt="Card image"><a href="https://wa.me/595981480801" target="_blank"> WhatsApp >>><span class="badge badge-primary badge-pill">1</span></a>
                             </p>
-                            <p><img src="/img/mx.png" width="55" alt="Card image"><a href="https://clientes.maxdominios.com/aff.php?aff=1043" target="_blank"> Hosted by Maxdominios >>></a>
+                            <p><img src="/img/mx.webp" width="55" alt="Card image"><a href="https://clientes.maxdominios.com/aff.php?aff=1043" target="_blank"> Hosted by Maxdominios >>><span class="badge badge-primary badge-pill">2</span></a>
                         </ul>
                     </div>
                 </div>
@@ -264,14 +261,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/search.js"></script>
-
     <script>
     (function () {
         _386.magicCursor();
         _386.scrollLock();
         $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="popover"]').popover();
-
         $(window).scroll(function () {
             var top = $(document).scrollTop();
             if (top > 50)
@@ -279,11 +274,9 @@
             else
                 $('#home > .navbar').addClass('navbar-transparent');
         });
-
         $("a[href='#']").click(function (e) {
             e.preventDefault();
         });
-
     })();
 </script>
 </body>
