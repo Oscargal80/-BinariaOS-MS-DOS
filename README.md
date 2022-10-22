@@ -10,7 +10,8 @@ Attributions
 The font for the v4 is by VileR, used under Creative Commons Share-Alike, which can be found at int10h.org.
 
 Notes
-
+### Attributions
+The font for the v4 is by VileR, used under Creative Commons Share-Alike, which [can be found at int10h.org](https://int10h.org/oldschool-pc-fonts/fontlist/).
 Codificado de caracteres https://www.textfixeres.com/html/codificador-de-caracteres-html.php
 
 chat: https://.tawk.to
