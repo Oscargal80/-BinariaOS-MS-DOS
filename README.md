@@ -6,6 +6,13 @@ Version 1.02 21-10-2022:
 Add audio files and Music toggle button.
 Add Halloween tematic
 
+Version 1.05 22-10-2022
+Add carousel
+New link radio 80
+Fix search bar
+My IP button
+Add Drupal CMS link
+
 Attributions
 The font for the v4 is by VileR, used under Creative Commons Share-Alike, which can be found at int10h.org.
 
