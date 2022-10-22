@@ -13,4 +13,5 @@ Notes
 
 [1] The v3 version kinda sucked. You don't want that, do you? Brooks' 2nd system effect, not just the musings of 1975. Anyway, v4 is coming ...
 Codificado de caracteres https://www.textfixeres.com/html/codificador-de-caracteres-html.php
+
 chat: ttps://.tawk.to
