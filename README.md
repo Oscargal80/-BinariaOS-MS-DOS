@@ -46,20 +46,7 @@ bootstrap/
 
 ## Run tests
 
--<!DOCTYPE html>
--<html>
- - <head>
-  -  <title>Bootstrap 101 Template</title>
-   - <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    -<!-- Bootstrap -->
-    -<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  -</head>
-  -<body>
-   - <h1>Hello, world!</h1>
-    -<script src="http://code.jquery.com/jquery.js"></script>
-    -<script src="js/bootstrap.min.js"></script>
-  -</body>
--</html>
+With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the File structure.
 
 ## Author
 
@@ -77,6 +64,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [ScarX80](https://github.com/Oscargal80).<br />
 This project is [https://github.com/kristopolous/BOOTSTRA.386](https://github.com/kristopolous/BOOTSTRA.386) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
