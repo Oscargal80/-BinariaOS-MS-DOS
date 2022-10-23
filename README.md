@@ -11,6 +11,12 @@
 
 ### ✨ [Demo](https://binariaos.com.py)
 
+## Version Changelog
+*Updated - V1.1.23102022
+<p>Carousel fix
+<p>Add client page
+<p>Change nav menu
+
 ## Install
 unzip files
 Button groups
