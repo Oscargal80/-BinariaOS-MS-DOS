@@ -42,13 +42,13 @@ Unzip files on a root folder. Use an editor like *Sublime Text* or similar to cr
 
 ## Usage Structure
 <p>bootstrap/
- <p>-----css/
+ <p>--------css/
  <p>--------│ bootstrap.css
  <p>--------│ bootstrap.min.css
- <p>------js/
+ <p>---------js/
  <p>--------│ bootstrap.js
  <p>--------│ bootstrap.min.js
-<p>------img/
+<p>---------img/
   <p>-------├ glyphicons-halflings.png
   <p>-------└ glyphicons-halflings-white.png
 
