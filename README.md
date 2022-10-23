@@ -13,10 +13,11 @@
 
 ## Version Changelog
 *Updated - V1.1.23102022*
-*Carousel fix*
-*Add client page*
-*Change nav menu*
-*Add iframe ip php notification*
+<p>*Carousel fix*
+<p>*Add client page*
+<p>*Change nav menu*
+<p>*Add iframe ip php notification*
+<p>*Toggle music*
 
 ## Install
 unzip files
