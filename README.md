@@ -12,23 +12,68 @@
 ### ✨ [Demo](https://binariaos.com.py)
 
 ## Install
-
-```sh
-bootstrap/
-```
+-unzip files-
+Button groups
+Button dropdowns
+Navigational tabs, pills, and lists
+Navbar
+Labels
+Badges
+Page headers and hero unit
+Thumbnails
+Alerts
+Progress bars
+Modals
+Dropdowns
+Tooltips
+Popovers
+Accordion
+Carousel
+Typeahead
+-
 
 ## Usage
-
-```sh
-      └── glyphicons-halflings-white.pngbootstrap/
-```
+bootstrap/
+  ├── css/
+  │   ├── bootstrap.css
+  │   ├── bootstrap.min.css
+  ├── js/
+  │   ├── bootstrap.js
+  │   ├── bootstrap.min.js
+  └── img/
+      ├── glyphicons-halflings.png
+      └── glyphicons-halflings-white.png
 
 ## Run tests
 
-```sh
-      └── glyphicons-halflings-white.png<!DOCTYPE html>
-```
-
+<!DOCTYPE html>
+<html>
+ - <head>
+  -  <title>Bootstrap 101 Template</title>
+   - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -<!-- Bootstrap -->
+    -<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  -</head>
+  -<body>
+   - <h1>Hello, world!</h1>
+    -<script src="http://code.jquery.com/jquery.js"></script>
+    -<script src="js/bootstrap.min.js"></script>
+  -</body>
+-</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
 ## Author
 
 👤 **ScarX80**
