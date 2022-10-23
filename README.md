@@ -12,11 +12,11 @@
 ### ✨ [Demo](https://binariaos.com.py)
 
 ## Version Changelog
-*Updated - V1.1.23102022
-*Carousel fix
-*Add client page
-*Change nav menu
-*Add iframe ip php notification
+*Updated - V1.1.23102022*
+*Carousel fix*
+*Add client page*
+*Change nav menu*
+*Add iframe ip php notification*
 
 ## Install
 unzip files
