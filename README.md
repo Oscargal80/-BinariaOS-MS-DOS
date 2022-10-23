@@ -40,17 +40,17 @@ Unzip files on a root folder. Use an editor like *Sublime Text* or similar to cr
 <p>*Change nav menu*Typeahead
 -
 
-## Usage
-bootstrap/
-  ├── css/
-  │   ├── bootstrap.css
-  │   ├── bootstrap.min.css
-  ├── js/
-  │   ├── bootstrap.js
-  │   ├── bootstrap.min.js
-  └── img/
-      ├── glyphicons-halflings.png
-      └── glyphicons-halflings-white.png
+## Usage Structure
+<p>bootstrap/
+ <p> ├── css/
+ <p> │   ├── bootstrap.css
+ <p> │   ├── bootstrap.min.css
+ <p> ├── js/
+ <p> │   ├── bootstrap.js
+ <p> │   ├── bootstrap.min.js
+<p>  └── img/
+  <p>    ├── glyphicons-halflings.png
+  <p>    └── glyphicons-halflings-white.png
 
 ## Run tests
 
