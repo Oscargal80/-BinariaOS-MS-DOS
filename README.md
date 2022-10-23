@@ -1,14 +1,5 @@
-<h1 align="center">Welcome to npx readme-md-generator -p templates/default.md 👋</h1>
+<h1 align="center">BinariaOS Bootstrap DOS</h1>
 <p>
-  <a href="https://www.npmjs.com/package/npx readme-md-generator -p templates/default.md" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/npx readme-md-generator -p templates/default.md.svg">
-  </a>
-  <a href="https://github.com/Oscargal80/-BinariaOS-MS-DOS" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/kristopolous/BOOTSTRA.386" target="_blank">
-    <img alt="License: https://github.com/kristopolous/BOOTSTRA.386" src="https://img.shields.io/badge/License-https://github.com/kristopolous/BOOTSTRA.386-yellow.svg" />
-  </a>
   <a href="https://twitter.com/BinariaOS" target="_blank">
     <img alt="Twitter: BinariaOS" src="https://img.shields.io/twitter/follow/BinariaOS.svg?style=social" />
   </a>
