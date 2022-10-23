@@ -33,8 +33,6 @@ echo "\n";
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 echo $details->country; 
 echo "<br>";
-echo "Loc Maps";
-echo "\n";
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 echo $details->loc; 
 echo "<br>";
