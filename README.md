@@ -40,7 +40,7 @@ Unzip files on a root folder. Use an editor like *Sublime Text* or similar to cr
 <p>*Change nav menu*Typeahead
 
 ## Usage Structure
-<p>Ad showip.php file to show server info, yo can edit this file to use with other php functions. There is another showipiframe.php ready to show on a iframe element on your site.
+<p>Ad *showip.php* file to show server info, yo can edit this file to use with other php functions. There is another *showipiframe.php* ready to show on a iframe element on your site.
 
 ## Usage Structure
 <p>bootstrap/
