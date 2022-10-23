@@ -20,24 +20,24 @@
 <p>*Toggle music*
 
 ## Install
-unzip files
-Button groups
-Button dropdowns
-Navigational tabs, pills, and lists
-Navbar
-Labels
-Badges
-Page headers and hero unit
-Thumbnails
-Alerts
-Progress bars
-Modals
-Dropdowns
-Tooltips
-Popovers
-Accordion
-Carousel
-Typeahead
+Unzip files on a root folder. Use an editor like *Sublime Text* or similar to create or edit files.
+<p>*Change nav menu*Button groups
+<p>*Change nav menu*Button dropdowns
+<p>*Change nav menu*Navigational tabs, pills, and lists
+<p>*Change nav menu*Navbar
+<p>*Change nav menu*Labels
+<p>*Change nav menu*Badges
+<p>*Change nav menu*Page headers and hero unit
+<p>*Change nav menu*Thumbnails
+<p>*Change nav menu*Alerts
+<p>*Change nav menu*Progress bars
+<p>*Change nav menu*Modals
+<p>*Change nav menu*Dropdowns
+<p>*Change nav menu*Tooltips
+<p>*Change nav menu*Popovers
+<p>*Change nav menu*Accordion
+<p>*Change nav menu*Carousel
+<p>*Change nav menu*Typeahead
 -
 
 ## Usage
