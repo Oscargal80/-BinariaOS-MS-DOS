@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" lang="es">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -21,6 +21,10 @@
     <link href="favicon.ico" rel="icon">
     <link rel='shortcut icon' type='image/x-icon' href="favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-grid.css" media="screen">
 </head>
 <body>
     <!-- Audio -->
@@ -29,16 +33,19 @@
     </audio>
     
     <!-- Body -->
-    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">BinariaOS Web Dev</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+    <div class="container" style="background:url('dist/fonts/grid.svg')">
+        
+        <!-- Nav Bar -->
+            <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="http://binariaos.com.py">BinariaOS Web Dev</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Menu <span class="caret"></span></a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes"> Menu <span class="caret"></span></a>
                         <div class="dropdown-menu" aria-labelledby="themes">
                             <a class="dropdown-item" href="about.html">Acerca</a>
                             <div class="dropdown-divider"></div>
@@ -74,18 +81,34 @@
                             <a class="dropdown-item" href="https://tawk.to/633c1eab54f06e12d8985b40">Ayuda</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="clientes">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://tawk.to/633c1eab54f06e12d8985b40">Ayuda</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container" style="background:url('dist/fonts/grid.svg')">
-        <div class="bs-docs-section clearfix">
-            <div class="row">
-                <div class="col-lg-1">
-                    <h2>Ready</h2>
-            </div>
-        </div>
-        
+                <!-- Buscador -->
+            <form class="form-inline my-lg-12" role="search" id="form-inline my-lg-12">
+            <input class="form-control mr-sm-2" type="search" placeholder="buscar" id="query" name="q">
+            <button class="btn btn-secondary my-sm-0">Buscar</button>
+            </form>
+            <script>const f = document.getElementById('form-inline my-lg-12');
+                        const q = document.getElementById('query');
+                        const google = 'https://www.google.com/search?q=site%3A+';
+                        const site = 'binariaos.com.py';
+
+                        function submitted(event) {
+                        event.preventDefault();
+                        const url = google + site + '+' + q.value;
+                        const win = window.open(url, '_blank');
+                        win.focus();
+                            }
+                        f.addEventListener('submit', submitted);</script>
+                </div>
+              </nav>
+            </div><br>
+
         <!-- Cabecera -->
             <div class="bs-docs-section">
                 <div class="row">
@@ -93,7 +116,9 @@
                         <div class="bs-component">
                             <div class="jumbotron">
                                 <div class="bs-component">
-                                    <h5>BIENVENIDO!</h5>
+                                    <h5>BIENVENIDO !!</h5>
+                                    <br>
+                                    <p><img src="img/binarialogo1.png" width="240" alt="Card image"></p>
                                     <p class="lead">
                                         Dedicados al desarrollo de sitios web elegantes, minimalistas y sobre todo, responsivos. En BinariaOS, acompa&ntilde;amos su emprendimiento con la mejor predisposici&oacute;n y ofreci&eacute;ndole
                                         un asesoramiento personalizado y completo.
@@ -102,12 +127,10 @@
                                     <p>
                                         Tambi&eacute;n le ofrecemos soluciones inform&aacute;ticas en una &aacute;mplia gama de servicios.
                                         Cont&aacute;cte con nosotros!
-                                    </p>
-                                    <p><img src="img/binarialogo1.png" width="280" alt="Card image"></p>
                                     <p class="lead">
                                         <a class="btn btn-primary btn-lg" href="about.html" role="button">Acerca de Nosotros</a>
                                         <a class="btn btn-primary btn-lg" href="contact.html" role="button">Contactos</a>
-                                        <img src="img/pump1.png" width="230" alt="Card image">
+                                        <img src="img/pump1.png" width="de 260" alt="Card image">
                                 </div>
                             </div>
                         </div>
@@ -121,6 +144,7 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
             </ol>
      <div class="carousel-inner">
       <div class="carousel-item active">
@@ -139,6 +163,13 @@
       </div>
       <div class="carousel-item">
         <img src="img/mbr9.webp" class="d-block w-100" width="210px" alt="Binaria3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Contacte con nosotros</h5>
+          <p>Atenci&oacute;n personalizada 24/7.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mbr10.webp" class="d-block w-100" width="210px" alt="Binaria4">
         <div class="carousel-caption d-none d-md-block">
           <h5>Contacte con nosotros</h5>
           <p>Atenci&oacute;n personalizada 24/7.</p>
@@ -231,7 +262,7 @@
                         <div class="card-body">
                             <h4 class="card-title">WordPress Dev</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Desarrollo en CMS</h6>
-                            <p class="card-text">Desarrollo sobre Wordpress, Drupal y otros CMS's. Integraci&oacute;n completa de su portal web en smartphones y tabletas. La comodidad de ver o comprar desde el m&oacute;vi, logrando una imagen mas din&aacute;mica de su portal.</p>
+                            <p class="card-text">Desarrollo sobre Wordpress, Drupal y otros CMS. Integraci&oacute;n completa de su portal web en smartphones y tabletas. La comodidad de ver o comprar desde el m&oacute;vi, logrando una imagen mas din&aacute;mica de su portal.</p>
                             <a href="https://sites.binariaos.com.py" class="card-link"><h4>Example</h4></a>
                             <a href="https://drupal.binariaos.com.py" class="card-link"><h5>DRUPAL</h5></a>
                             <a href="https://shop.binariaos.com.py" class="card-link"><h6>e-Commerce</h6></a>
@@ -288,9 +319,9 @@
                     <br>
                     <div class="bs-component">
                         <ul class="list-group">
-                            <p><img src="/img/qr.webp" width="55" alt="Card image"><a href="https://wa.me/595981480801" target="_blank"> WhatsApp<span class="badge badge-primary badge-pill">1</span></a>
+                            <p><img src="/img/qr.webp" width="55" alt="Card image"><a href="https://wa.me/595981480801" target="_blank"> WhatsApp</a>
                             </p>
-                            <img src="/img/mx1.webp" width="55" alt="Card image"><a href="https://clientes.maxdominios.com/aff.php?aff=1043" target="_blank"> Hosted by Maxdominios<span class="badge badge-primary badge-pill">2</span></a>
+                            <img src="/img/mx1.webp" width="55" alt="Card image"><a href="https://clientes.maxdominios.com/aff.php?aff=1043" target="_blank"> Hosted by Maxdominios</a>
                         </ul>
                     </div>
                 </div>
@@ -299,11 +330,11 @@
         <!-- Footer -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 id="type-blockquotes">Updated 21/10/2022 - V1.02 - BinOS</h2>
+                    <h2 id="type-blockquotes">Updated 22/10/2022 - V1.05 - BinOS</h2>
                 </div>
             </div>
         </div>
-    </div>
+
     
       <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
