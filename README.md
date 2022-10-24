@@ -1,8 +1,5 @@
 <h1 align="center">BinariaOS DOS Bootstrap 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/npx readme-md-generator -p templates/default.md" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/npx readme-md-generator -p templates/default.md.svg">
-  </a>
   <a href="https://github.com/Oscargal80/-BinariaOS-MS-DOS" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
