@@ -27,6 +27,8 @@
 <p>*Change nav menu
 <p>*Add iframe ip php notification*
 <p>*Toggle music
+<p>*Add PHP ajaxserver serverside fomrs
+<p>*thankyou screen
 
 ## Install
 Download and unzip
