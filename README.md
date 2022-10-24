@@ -20,6 +20,14 @@
 
 ### ✨ [Demo](https://binariaos.com.py)
 
+## Version Changelog
+*Updated - V1.1.23102022*
+<p>*Carousel fix
+<p>*Add client page
+<p>*Change nav menu
+<p>*Add iframe ip php notification*
+<p>*Toggle music
+
 ## Install
 Download and unzip
 Use text editor like Sublime Text
