@@ -26,9 +26,9 @@ Use text editor like Sublime Text
 
 ## Author
 
-👤 **ScarX80**
+👤 **Oscargal80**
 
-* Website: ScarX80
+* Website: Oscargal80
 * Twitter: [@BinariaOS](https://twitter.com/BinariaOS)
 * Github: [@Oscargal80](https://github.com/Oscargal80)
 
