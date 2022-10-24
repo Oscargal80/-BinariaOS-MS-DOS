@@ -9,6 +9,9 @@
   <a href="https://twitter.com/BinariaOS" target="_blank">
     <img alt="Twitter: BinariaOS" src="https://img.shields.io/twitter/follow/BinariaOS.svg?style=social" />
   </a>
+  <a href="https://twitter.com/oscargal" target="_blank">
+    <img alt="Twitter: Oscargal" src="https://img.shields.io/twitter/follow/BinariaOS.svg?style=social" />
+  </a>
 </p>
 
 > README.md
