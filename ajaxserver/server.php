@@ -1,165 +1,132 @@
 <?php
-// Set the header response to JSON
+
+// Header y redirect
+header('Refresh: 1; URL=http://binariaos.com.py/thankyou');
+$url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+echo "Favor espere, estamos procesando su petición..." . "\r\n"; 
+
 header('Content-type: application/json');
-
-// Do not show php error
-ini_set('display_errors','Off');
-
-$response = array();
-
 /*
- *Handle Message From
+ *Formulario
  */
-// check email into post data
+// check email
 if (isset($_POST['submit_message'])) {
     $email = trim($_POST['email']);
     $name = trim($_POST['name']);
-    $product = trim($_POST['product']);
     $message = trim($_POST['message']);
-    
     
 	$email = filter_var(@$_POST['email'], FILTER_SANITIZE_EMAIL );
 	
 	$name = htmlentities($name);
-	$product = htmlentities($product);
 	$message = htmlentities($message);
 
-	// Validate data first
+	// Validar datos
     if (!filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($email) > 50 ) {
 		http_response_code(403);
-        $response['error']['email'] = "A valid email is required";
+        $response['error']['email'] = "Correro valido requerido";
     }
     if (empty($name) ) {
 		http_response_code(403);
-        $response['error']['name'] = 'Name is required ';
+        $response['error']['name'] = 'Nombre requerido ';
     }
     if (empty($message)) {
 		http_response_code(403);
-        $response['error']['message'] = 'Empty message is not allowed';
+        $response['error']['message'] = 'Mensaje vacio';
     }
 
-	// Process to emailing if forms are correct
     if (!isset($response['error']) || $response['error'] === '') {       
 
-        
-		/* in this sample code, messages will be stored in a text file */
-//        PROCESS TO STORE MESSAGE GOES HERE
-        
-        $content = "Name: " . $name . " \r\nEmail: " . $email .  " \r\nMessage: " . $message;
+        $content = "Nombre: " . $name . " \r\nEmail: " . $email .  " \r\nMensaje: " . $message;
         $content = str_replace(array('<','>'),array('&lt;','&gt;'),$content);
         $name = str_replace(array('<','>'),array('&lt;','&gt;'),$name);
         $message = str_replace(array('<','>'),array('&lt;','&gt;'),$message);
         
-        // -- BELOW : EXAMPLE SEND YOU AN EMAIL CONTAINING THE MESSAGE (comment to disable it/ uncomment it to enable it)
-        // Set the recipient email address.
-        // IMPORTANT - FIXME: Update this to your desired email address (relative to your server domaine).
-        $recipient = "your@email.com";
+        $recipient = "info@binariaos.com.py";
 
-        // Set the email subject.
-        $subject = "Need support message From ".$name;
+        // Subject
+        $subject = "Desde Fomulario de Contacto ".$name;
 
-        // Build the email content.
+        // Contenido
         $email_content = $message."\n \n";       
-        $email_content .= "Sincerely,";
-        $email_content .= "From: $name\n\n";
+        $email_content .= "Saludos,";
+        $email_content .= "De: $name\n\n";
         $email_content .= "Email: $email\n\n";
 
-        // Build the email headers.
+        // Cabecera
 		$email_headers = "MIME-Version: 1.0" . "\r\n"; 
 		$email_headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n"; 
-		$email_headers .= "From: $name <$email>" . "\r\n";
-		$email_headers .= "Reply-To: <$email>";
+		$email_headers .= "De: $name <$email>" . "\r\n";
+		$email_headers .= "Respuesta: <$email>";
         
-
-        // Send the email.
+        // Enviar email
         if ( mail($recipient, $subject, $email_content, $email_headers) ) {
-            // Set a 200 (okay) response code.
+            //200 (ok)
            	http_response_code(200);
-            $response['success'] = 'Thank You! Your message has been sent';
+            $response['success'] = 'Gracias, su mensaje ha sido enviado.';
             
         } else {
-            // Set a 500 (internal server error) response code.
+            // 500 (internal server error)
            	http_response_code(500);
-            $response['error'] = 'Oops! Something went wrong and we couldn\'t send your message';
-            $content = 'Message delivery error - can not send message'. "\r\n" . $content;
-            // Uncomment below to Write message into a file as a backup
-            //file_put_contents("message.txt", $content . "\r\n---------\r\n", FILE_APPEND | LOCK_EX);
+            $response['error'] = 'Error al enviar, intente de nuevo.';
+            $content = 'No pudimos entregar su mensaje'. "\r\n" . $content;
         }
                  
     } 
 	else {
-        // Set a 403 (error) forbidden response code due missing data to error.
+        // 403 (error) forbidden response
        	http_response_code(403);
 		//$response['error'] = '<ul>' . $response['error'] . '</ul>';
     }
 
-
     $response['email'] = $email;
     $response['form'] = 'submit_message';
-    echo json_encode($response);
+
 }
 
-
-// Receive email newsletter subscription
+        // Suscripcion
 if (isset($_POST['submit_email'])) {
 
     $email = filter_var(@$_POST['email'], FILTER_SANITIZE_EMAIL );
     
-    // Form validation handled by the server here if required
     if (!filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($email) > 50 ) {
-        $response['error']['email'] = "A valid email is required";
+        $response['error']['email'] = "Correro valido requerido";
     }
 
-
     if (!isset($response['error']) || $response['error'] === '') {
-
-//        PROCESS TO STORE EMAIL GOES HERE
-        
         
 		$email = str_replace(array('<','>'),array('&lt;','&gt;'),$email);
         
-        // -- BELOW : EXAMPLE SEND YOU AN EMAIL ABOUT THE NEW USER (comment to disable it/ uncomment it to enable it)
-        // Set the recipient email address.
-        // IMPORTANT - FIXME: Update this to your desired email address (relative to your server domaine).
-        $recipient = "your@email.com";
+        $recipient = "info@binariaos.com.py";
 
-        // Set the email subject.
-        $subject = "New subscription";
+        // Subject.
+        $subject = "Nueva subscription";
 
-        // Build the email content.
-        $email_content = "Hello \n New user subscription.\n";
+        // Contenido.
+        $email_content = "Hello \n Form de Suscripcion.\n";
         $email_content .= "Email: $email\n\n";
-        $email_content .= "Sincerely,";
+        $email_content .= "Saludos,";
 
-        // Build the email headers.
-		
+        // Cabecera.
 		$email_headers = "MIME-Version: 1.0" . "\r\n"; 
 		$email_headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n"; 
-		$email_headers .= "From: <$email>" . "\r\n";
+		$email_headers .= "De: <$email>" . "\r\n";
 
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            $response['success'] = "Thank You! You will be notified.";
-            
+        // Enviar.
+    if (mail($recipient, $subject, $email_content, $email_headers)) {
+
+    http_response_code(200);
+    $response['success'] = "Gracias, su correo ha sido notificado.";  
         } else {
-            // Set a 500 (internal server error) response code.
-            //http_response_code(500);
             http_response_code(500);
-            $response['error'] = "Oops! Something went wrong and we couldn't send your message.";
-			
-            
+            $response['error'] = "OError al enviar, intente de nuevo.";
         }
-        // -- END OF : EXAMPLE SEND YOU AN EMAIL ABOUT THE NEW USER 
-        
-        // Uncomment below to save email list to a file as backup
         file_put_contents("email.txt", $email . " \r\n", FILE_APPEND | LOCK_EX);
-        
-
     }
     $response['email'] = $email;
     $response['form'] = 'submit_email';
-    echo json_encode($response);    
-} 
 
+ } 
+?>
+
+<!-- HTML 
+// <a class="button" href="http://binariaos.com.py" role="button">Inicio</a>-->
