@@ -21,22 +21,8 @@
 ### ✨ [Demo](https://binariaos.com.py)
 
 ## Install
-
-```sh
-bootstrap/
-```
-
-## Usage
-
-```sh
-      └── glyphicons-halflings-white.pngbootstrap/
-```
-
-## Run tests
-
-```sh
-      └── glyphicons-halflings-white.png<!DOCTYPE html>
-```
+Download and unzip
+Use text editor like Sublime Text
 
 ## Author
 
@@ -54,6 +40,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [ScarX80](https://github.com/Oscargal80).<br />
 This project is [https://github.com/kristopolous/BOOTSTRA.386](https://github.com/kristopolous/BOOTSTRA.386) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
