@@ -48,5 +48,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [ScarX80](https://github.com/Oscargal80).<br />
+© 2022 [Oscargal80](https://github.com/Oscargal80).<br />
 This project is [https://github.com/kristopolous/BOOTSTRA.386](https://github.com/kristopolous/BOOTSTRA.386) licensed.
