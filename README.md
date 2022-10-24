@@ -28,7 +28,7 @@
 <p>*Add iframe ip php notification*
 <p>*Toggle music
 <p>*Add PHP ajaxserver serverside forms
-<p>*thankyou screen
+<p>*Add thankyou screen
 
 ## Install
 Download and unzip
