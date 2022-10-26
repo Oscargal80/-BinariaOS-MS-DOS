@@ -7,9 +7,9 @@ $string =
 '</head>'.
 '<body>';
 echo "<div class='jumbotron'\"h3 style=\"text-align:center\">";
-echo $ip = $_SERVER['REMOTE_ADDR'];
+echo 'IP'."\n", $ip = $_SERVER['REMOTE_ADDR'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-echo "<center>$details->city</center>"; 
+echo "<center>$details->city</center>";
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 echo "<center>$details->country</center>";
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
