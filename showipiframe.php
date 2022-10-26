@@ -9,15 +9,15 @@ $string =
 echo "<div class='jumbotron'\"h3 style=\"text-align:center\">";
 echo $ip = $_SERVER['REMOTE_ADDR'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-echo "<center>$details->city;</center>"; 
+echo "<center>$details->city</center>"; 
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-echo "<center>$details->country;</center>";
+echo "<center>$details->country</center>";
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-echo "<center>$details->loc;</center>";
+echo "<center>$details->loc</center>";
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-echo "<center>$details->org;</center>";
+echo "<center>$details->org</center>";
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-echo "<center>$details->hostname;</center>";
+echo "<center>$details->hostname</center>";
 echo $string;
 '</body>'.
 '</html>';
